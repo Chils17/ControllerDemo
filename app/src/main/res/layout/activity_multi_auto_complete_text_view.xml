@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.webmyne.controllerdemo.ui.MultiAutoCompleteTextViewActivity">
+
+    <MultiAutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#0f0"
+        android:hint="Simple Multi Auto Complete TextView"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorBlack"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/simpleMultiAutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="Multi Auto Complete TextView"
+        android:padding="10dp"
+        android:textColor="#f00"
+        android:textColorHint="@color/colorBlack"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Add Item" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorBlack"
+        android:text="Add"
+        android:textColor="@color/colorWhiteSmoke" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:ems="15"
+        android:hint="Add Multi Items in Multi Auto"
+        android:textColorHint="@color/colorBlack" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTvMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:dropDownSelector="@color/colorAccent"
+        android:layout_marginBottom="10dp"
+        android:completionHintView="@layout/hint_completion_layout"
+        android:completionThreshold="1"
+        android:hint="Custom Multi Auto Complete TextView"
+        android:textColorHint="@color/colorBlack" />
+
+
+</LinearLayout>

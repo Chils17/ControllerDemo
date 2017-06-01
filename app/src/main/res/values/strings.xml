@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Controllers</string>
+
+    <string-array name="spinner_item">
+        <item>Android</item>
+        <item>Php</item>
+        <item>Dot net</item>
+        <item>Java</item>
+        <item>Tester</item>
+    </string-array>
+
+
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+
+
+    <string-array name="country_array">
+        <item>India</item>
+        <item>Canada</item>
+        <item>Sri Lanka</item>
+    </string-array>
+
+    <string-array name="city_india">
+        <item>Mumbai</item>
+        <item>Chennai</item>
+        <item>Kolkata</item>
+        <item>Bangalore</item>
+    </string-array>
+
+    <string-array name="city_canada">
+        <item>Quebec</item>
+        <item>Montreal</item>
+        <item>Toronto</item>
+        <item>British Columbia</item>
+    </string-array>
+
+    <string-array name="city_srilanka">
+        <item>Colombo</item>
+        <item>Dehiwala-Mount Lavinia</item>
+        <item>Moratuwa</item>
+        <item>Kotte</item>
+    </string-array>
+
+
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string name="spinner_title">Select Category</string>
+</resources>
