@@ -30,7 +30,6 @@
         <activity
             android:name=".SearchActivity"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".ui.SpinnerActivity" />
         <activity android:name=".ui.ToggleButtonActivity" />
         <activity android:name=".ui.ProgressBarActivity" />
         <activity android:name=".ui.SeekBarActivity" />
@@ -38,7 +37,8 @@
         <activity android:name=".ui.AutoCompleteTextViewActivity" />
         <activity android:name=".ui.MultiAutoCompleteTextViewActivity" />
         <activity android:name=".ui.ChronometerActivity" />
-        <activity android:name=".ui.AdapterViewFlipperActivity"></activity>
+        <activity android:name=".ui.AdapterViewFlipperActivity" />
+        <activity android:name=".ui.StackViewActivity"></activity>
     </application>
 
 </manifest>

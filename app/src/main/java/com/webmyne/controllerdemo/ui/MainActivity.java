@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btnMultiAutoTextView;
     private Button btnChronometer;
     private Button btnViewFlipper;
+    private Button btnStackView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnMultiAutoTextView = (Button) findViewById(R.id.btnMultiAutoTextView);
         btnChronometer = (Button) findViewById(R.id.btnChronometer);
         btnViewFlipper = (Button) findViewById(R.id.btnViewFlipper);
+        btnStackView = (Button) findViewById(R.id.btnStackView);
 
         listener();
     }
@@ -73,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnMultiAutoTextView.setOnClickListener(this);
         btnChronometer.setOnClickListener(this);
         btnViewFlipper.setOnClickListener(this);
+        btnStackView.setOnClickListener(this);
     }
 
     @Override
@@ -151,6 +154,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnViewFlipper:
                 Intent intentViewFlipper = new Intent(this, AdapterViewFlipperActivity.class);
                 startActivity(intentViewFlipper);
+                break;
+
+            case R.id.btnStackView:
+                Intent intentStackView = new Intent(this, StackViewActivity.class);
+                startActivity(intentStackView);
                 break;
 
         }

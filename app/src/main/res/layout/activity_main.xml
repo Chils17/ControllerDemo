@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="10dp"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
     tools:context="com.webmyne.controllerdemo.ui.MainActivity">
@@ -36,19 +37,25 @@
                 android:id="@+id/btnEdit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Edit Text" />
+                android:layout_weight="1"
+                android:text="Edit Text"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/btnText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Text View" />
+                android:layout_weight="1"
+                android:text="Text View"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/btnImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Iamge View" />
+                android:layout_weight="1"
+                android:text="Iamge View"
+                android:textSize="12sp" />
 
         </LinearLayout>
 
@@ -63,19 +70,25 @@
                 android:id="@+id/btnRadio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Radio Group" />
+                android:layout_weight="1"
+                android:text="Radio Group"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/btnButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_weight="1"
+                android:text="Button"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/btnSearch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Search View" />
+                android:layout_weight="1"
+                android:text="Search View"
+                android:textSize="12sp" />
 
         </LinearLayout>
 
@@ -90,19 +103,25 @@
                 android:id="@+id/btnSpinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Spinner" />
+                android:layout_weight="1"
+                android:text="Spinner"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/btnToogle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Toogle BUtton" />
+                android:layout_weight="1"
+                android:text="Toogle BUtton"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/btnProgress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Progress Bar" />
+                android:layout_weight="1"
+                android:text="Progress Bar"
+                android:textSize="12sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -116,13 +135,17 @@
                 android:id="@+id/btnSeek"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Seek bar" />
+                android:layout_weight="1"
+                android:text="Seek bar"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/btnQCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Quick Contact Badge" />
+                android:layout_weight="1"
+                android:text="Quick Contact Badge"
+                android:textSize="12sp" />
 
         </LinearLayout>
 
@@ -155,13 +178,17 @@
                 android:id="@+id/btnAutoCompleteTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Auto Complete TextView" />
+                android:layout_weight="1"
+                android:text="Auto Complete TextView"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/btnMultiAutoTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Multi Auto Complete TextView" />
+                android:layout_weight="1"
+                android:text="Multi Auto Complete TextView"
+                android:textSize="12sp" />
 
         </LinearLayout>
 
@@ -176,13 +203,23 @@
                 android:id="@+id/btnChronometer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Chronometer" />
+                android:text="Chronometer"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/btnViewFlipper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Adapter ViewFlipper"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnStackView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Adapter ViewFlipper" />
+                android:text="Stack View"
+                android:textSize="12sp" />
 
         </LinearLayout>
     </LinearLayout>
