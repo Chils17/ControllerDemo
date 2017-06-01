@@ -6,13 +6,13 @@
     android:orientation="vertical">
 
     <ImageView
-        android:background="@color/colorWhiteSmoke"
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
+        android:background="@color/colorWhiteSmoke"
         android:src="@drawable/india" />
 
     <TextView
@@ -22,9 +22,8 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="TextView"
+        android:text="Name"
         android:textColor="@android:color/holo_blue_dark"
         android:textStyle="bold" />
-
 
 </LinearLayout>

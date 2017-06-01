@@ -10,32 +10,32 @@
     tools:context="com.webmyne.controllerdemo.ui.StackViewActivity">
 
     <StackView
-        android:background="@color/colorWhiteSmoke"
         android:id="@+id/stackView"
         android:layout_width="match_parent"
         android:layout_height="234dp"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhiteSmoke" />
 
     <LinearLayout
-        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:orientation="horizontal">
 
         <Button
-            android:layout_weight="1"
             android:id="@+id/button_previous"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Previous" />
 
         <Button
-            android:layout_weight="1"
             android:id="@+id/button_next"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Next" />
     </LinearLayout>
 
