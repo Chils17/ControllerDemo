@@ -38,7 +38,10 @@
         <activity android:name=".ui.MultiAutoCompleteTextViewActivity" />
         <activity android:name=".ui.ChronometerActivity" />
         <activity android:name=".ui.AdapterViewFlipperActivity" />
-        <activity android:name=".ui.StackViewActivity"></activity>
+        <activity android:name=".ui.StackViewActivity" />
+        <activity android:name=".ui.ImageSwitcherActivity" />
+        <activity android:name=".ui.TextSwitcherActivity" />
+        <activity android:name=".ui.ViewSwitcherActivity"></activity>
     </application>
 
 </manifest>

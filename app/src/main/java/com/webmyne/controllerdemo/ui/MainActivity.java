@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btnChronometer;
     private Button btnViewFlipper;
     private Button btnStackView;
+    private Button btnImageSwitcher;
+    private Button btnTextSwitcher;
+    private Button btnViewSwitcher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +58,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnChronometer = (Button) findViewById(R.id.btnChronometer);
         btnViewFlipper = (Button) findViewById(R.id.btnViewFlipper);
         btnStackView = (Button) findViewById(R.id.btnStackView);
+        btnImageSwitcher = (Button) findViewById(R.id.btnImageSwitcher);
+        btnTextSwitcher = (Button) findViewById(R.id.btnTextSwitcher);
+        btnViewSwitcher = (Button) findViewById(R.id.btnViewSwitcher);
 
         listener();
     }
@@ -76,6 +82,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnChronometer.setOnClickListener(this);
         btnViewFlipper.setOnClickListener(this);
         btnStackView.setOnClickListener(this);
+        btnImageSwitcher.setOnClickListener(this);
+        btnTextSwitcher.setOnClickListener(this);
+        btnViewSwitcher.setOnClickListener(this);
     }
 
     @Override
@@ -159,6 +168,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnStackView:
                 Intent intentStackView = new Intent(this, StackViewActivity.class);
                 startActivity(intentStackView);
+                break;
+
+            case R.id.btnImageSwitcher:
+                Intent intentImageSwitcher = new Intent(this, ImageSwitcherActivity.class);
+                startActivity(intentImageSwitcher);
+                break;
+
+            case R.id.btnTextSwitcher:
+                Intent intentTextSwitcher = new Intent(this, TextSwitcherActivity.class);
+                startActivity(intentTextSwitcher);
+                break;
+
+            case R.id.btnViewSwitcher:
+                Intent intentViewSwitcher = new Intent(this, ViewSwitcherActivity.class);
+                startActivity(intentViewSwitcher);
                 break;
 
         }

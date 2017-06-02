@@ -82,7 +82,6 @@ public class AutoCompleteTextViewActivity extends AppCompatActivity {
 
         SimpleAdapter adapter = new SimpleAdapter(getBaseContext(), aList, R.layout.autocomplete_layout, from, to);
 
-
         customAutoComplete.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

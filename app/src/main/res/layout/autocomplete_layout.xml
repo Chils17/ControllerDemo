@@ -10,7 +10,6 @@
         android:layout_gravity="center"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:contentDescription="hello_world"
         android:padding="10dp" />
 
     <TextView

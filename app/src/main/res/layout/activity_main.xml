@@ -39,6 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Edit Text"
+                android:textColor="@color/colorBlack"
                 android:textSize="12sp" />
 
             <Button
@@ -47,6 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Text View"
+                android:textColor="@color/colorBlack"
                 android:textSize="12sp" />
 
             <Button
@@ -54,7 +56,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Iamge View"
+                android:text="Image View"
+                android:textColor="@color/colorBlack"
                 android:textSize="12sp" />
 
         </LinearLayout>
@@ -72,6 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Radio Group"
+                android:textColor="@color/colorBlack"
                 android:textSize="12sp" />
 
             <Button
@@ -80,6 +84,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Button"
+                android:textColor="@color/colorBlack"
                 android:textSize="12sp" />
 
             <Button
@@ -88,6 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Search View"
+                android:textColor="@color/colorBlack"
                 android:textSize="12sp" />
 
         </LinearLayout>
@@ -105,6 +111,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Spinner"
+                android:textColor="@color/colorBlack"
                 android:textSize="12sp" />
 
             <Button
@@ -113,6 +120,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Toogle BUtton"
+                android:textColor="@color/colorBlack"
                 android:textSize="12sp" />
 
             <Button
@@ -121,6 +129,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Progress Bar"
+                android:textColor="@color/colorBlack"
                 android:textSize="12sp" />
         </LinearLayout>
 
@@ -137,6 +146,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Seek bar"
+                android:textColor="@color/colorBlack"
                 android:textSize="12sp" />
 
             <Button
@@ -145,6 +155,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Quick Contact Badge"
+                android:textColor="@color/colorBlack"
                 android:textSize="12sp" />
 
         </LinearLayout>
@@ -180,6 +191,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Auto Complete TextView"
+                android:textColor="@color/colorBlack"
                 android:textSize="12sp" />
 
             <Button
@@ -188,6 +200,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Multi Auto Complete TextView"
+                android:textColor="@color/colorBlack"
                 android:textSize="12sp" />
 
         </LinearLayout>
@@ -204,6 +217,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Chronometer"
+                android:textColor="@color/colorBlack"
                 android:textSize="12sp" />
 
             <Button
@@ -212,6 +226,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Adapter ViewFlipper"
+                android:textColor="@color/colorBlack"
                 android:textSize="12sp" />
 
             <Button
@@ -219,6 +234,41 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Stack View"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnImageSwitcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Image Switcher"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnTextSwitcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text Switcher"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnViewSwitcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Switcher"
+                android:textColor="@color/colorBlack"
                 android:textSize="12sp" />
 
         </LinearLayout>

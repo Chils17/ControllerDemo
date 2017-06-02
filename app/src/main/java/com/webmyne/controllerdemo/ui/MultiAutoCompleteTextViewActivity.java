@@ -2,7 +2,9 @@ package com.webmyne.controllerdemo.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -66,13 +68,20 @@ public class MultiAutoCompleteTextViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
+                String et = et1.getText().toString();
+                if (!et.isEmpty()) {
+                    li.add(et);
+                    et1.setText(null);
+                    add();
+                    Toast.makeText(getBaseContext(), "Item Added", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getBaseContext(), "Fields are empty !", Toast.LENGTH_SHORT).show();
+                }
 
-                li.add(et1.getText().toString());
-                et1.setText(null);
-                add();
-                Toast.makeText(getBaseContext(), "Item Added", Toast.LENGTH_SHORT).show();
             }
         });
+
+
     }
 
     private void add() {
@@ -99,5 +108,23 @@ public class MultiAutoCompleteTextViewActivity extends AppCompatActivity {
 
         multiAutoCompleteTvMonth.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
         multiAutoCompleteTvMonth.setAdapter(monthAdapter);
+
+
+        multiAutoCompleteTvMonth.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Log.e("tag", "months[" + position + "] : " + months[position]);
+
+                Log.e("tag", "parent.getItemAtPosition(): " + parent.getItemAtPosition(position));
+
+                // multiAutoCompleteTvMonth.setText(parent.getItemAtPosition(position).toString());
+
+            }
+        });
+
+
     }
+
+
 }

@@ -6,10 +6,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_marginTop="10dp"
     tools:context="com.webmyne.controllerdemo.ui.AdapterViewFlipperActivity">
 
 
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:text="Adapter View-Flipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <AdapterViewFlipper
+        android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:id="@+id/simpleAdapterViewFlipper"
         android:layout_width="match_parent"

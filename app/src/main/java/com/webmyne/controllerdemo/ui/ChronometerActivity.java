@@ -92,7 +92,7 @@ public class ChronometerActivity extends AppCompatActivity {
                 if (customChronometer.getText().toString().equalsIgnoreCase("00:05:0")) {
 
                     customChronometer.stop();
-                    Toast.makeText(getBaseContext(),"Reached the end.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getBaseContext(),"Reached the end.!", Toast.LENGTH_LONG).show();
                 }
             }
         });

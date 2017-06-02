@@ -61,12 +61,12 @@ public class StackViewActivity extends AppCompatActivity {
         List<StackItem> items = new ArrayList<StackItem>();
 
         for (String imageName : IMAGE_NAMES) {
-            items.add(new StackItem(imageName + ".png", imageName));
+            items.add(new StackItem(imageName, imageName));
         }
 
         StackAdapter adapt = new StackAdapter(this, R.layout.stack_item, items);
         stackView.setAdapter(adapt);
         stackView.setHorizontalScrollBarEnabled(true);
-        stackView.setBackgroundColor(Color.rgb(230, 255, 255));
+        //stackView.setBackgroundColor(Color.rgb(230, 255, 255));
     }
 }
