@@ -32,6 +32,7 @@ public class AutoCompleteTextViewActivity extends AppCompatActivity {
             "Indian Rupee", "China Rupee", "Australia Rupee", "Portugle Rupee", "America Rupee", "New Zealand Rupee"};
     private AutoCompleteTextView autoComplete;
     private CustomAutoCompleteTextView customAutoComplete;
+    private AutoCompleteTextView autoTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,7 @@ public class AutoCompleteTextViewActivity extends AppCompatActivity {
 
 
     private void init() {
+        autoTextView = (AutoCompleteTextView) findViewById(R.id.autoTextView);
         autoComplete = (AutoCompleteTextView) findViewById(R.id.autoCompleteTextView);
         customAutoComplete = (CustomAutoCompleteTextView) findViewById(R.id.autocomplete);
     }
@@ -59,6 +61,10 @@ public class AutoCompleteTextViewActivity extends AppCompatActivity {
         autoComplete.setThreshold(2);
         autoComplete.setAdapter(adapter);
         autoComplete.setTextColor(Color.RED);
+
+        autoTextView.setThreshold(2);
+        autoTextView.setAdapter(adapter);
+        autoTextView.setTextColor(Color.BLUE);
     }
 
 

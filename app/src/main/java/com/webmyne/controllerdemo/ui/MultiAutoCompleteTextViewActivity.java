@@ -36,6 +36,7 @@ public class MultiAutoCompleteTextViewActivity extends AppCompatActivity {
     private String[] months;
     private ArrayList<User> userArrayList;
     private AutoCompleteAdapter adapter;
+    private MultiAutoCompleteTextView multiTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +62,7 @@ public class MultiAutoCompleteTextViewActivity extends AppCompatActivity {
 
 
     private void init() {
+        multiTextView = (MultiAutoCompleteTextView) findViewById(R.id.multiTextView);
         simpleMultiAutoCompleteTextView = (MultiAutoCompleteTextView) findViewById(R.id.simpleMultiAutoCompleteTextView);
         auto = (MultiAutoCompleteTextView) findViewById(R.id.multiAutoCompleteTextView1);
         et1 = (EditText) findViewById(R.id.editText1);
@@ -109,6 +111,10 @@ public class MultiAutoCompleteTextViewActivity extends AppCompatActivity {
         simpleMultiAutoCompleteTextView.setAdapter(versionNames);
         simpleMultiAutoCompleteTextView.setThreshold(1);
         simpleMultiAutoCompleteTextView.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
+
+        multiTextView.setAdapter(versionNames);
+        multiTextView.setThreshold(1);
+        multiTextView.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
     }
 
     private void setLayoutAdapter() {

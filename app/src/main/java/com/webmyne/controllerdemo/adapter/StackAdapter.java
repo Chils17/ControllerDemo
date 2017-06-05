@@ -51,7 +51,7 @@ public class StackAdapter extends ArrayAdapter<StackItem> {
                 int resId = this.getDrawableResIdByName(imageName);
 
                 imageView.setImageResource(resId);
-               // imageView.setBackgroundColor(Color.rgb(211, 204, 188));
+                imageView.setBackgroundColor(Color.rgb(211, 204, 188));
             }
 
         }
