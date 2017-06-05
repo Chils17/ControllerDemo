@@ -67,6 +67,6 @@ public class StackViewActivity extends AppCompatActivity {
         StackAdapter adapt = new StackAdapter(this, R.layout.stack_item, items);
         stackView.setAdapter(adapt);
         stackView.setHorizontalScrollBarEnabled(true);
-        //stackView.setBackgroundColor(Color.rgb(230, 255, 255));
+        stackView.setBackgroundColor(Color.rgb(230, 255, 255));
     }
 }

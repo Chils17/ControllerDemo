@@ -12,15 +12,16 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:background="@color/colorWhiteSmoke"
+        android:scaleType="center"
         android:src="@drawable/india" />
 
     <TextView
-        android:gravity="center"
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
+        android:gravity="center"
         android:text="Name"
         android:textColor="@android:color/holo_blue_dark"
         android:textStyle="bold" />
