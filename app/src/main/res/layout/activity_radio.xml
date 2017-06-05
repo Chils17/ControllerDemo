@@ -21,7 +21,6 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:checked="false"
-
             android:text="Male"
             android:textSize="25sp" />
 
@@ -45,27 +44,27 @@
 
         <RadioButton
             android:id="@+id/sound"
+            style="@style/RadioButtonAppTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/colorOrange"
             android:text="Sound"
             android:textColor="@android:color/holo_blue_bright"
             android:textSize="15sp" />
 
         <RadioButton
             android:id="@+id/vibration"
+            style="@style/RadioButtonAppTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/colorOrange"
             android:text="Vibrate"
             android:textColor="@android:color/holo_blue_bright"
             android:textSize="15sp" />
 
         <RadioButton
             android:id="@+id/silent"
+            style="@style/RadioButtonAppTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/colorOrange"
             android:text="Silent"
             android:textColor="@android:color/holo_blue_bright"
             android:textSize="15sp" />
@@ -74,9 +73,9 @@
 
 
     <LinearLayout
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:orientation="vertical">
 
         <com.webmyne.controllerdemo.ui.MultiRowsRadioGroup
@@ -86,36 +85,35 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_gravity="center"
                 android:id="@android:id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="Radio Group" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <RadioButton
                     android:id="@+id/btn"
+                    style="@style/RadioButtonAppThemeOrange"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="40dp"
-                    android:buttonTint="@color/colorHint"
+                    android:layout_margin="10dp"
                     android:checked="true"
-                    android:fontFamily="serif"
                     android:text="Button 1"
                     android:textColor="@android:color/holo_purple"
                     android:textSize="15sp" />
 
                 <RadioButton
+                    style="@style/RadioButtonAppThemeOrange"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:buttonTint="@color/colorPrimaryDark"
+                    android:layout_margin="10dp"
                     android:text="Button 2"
-                    android:textAllCaps="true"
                     android:textColor="@android:color/holo_purple"
                     android:textSize="15sp" />
             </LinearLayout>
@@ -123,13 +121,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <RadioButton
                     style="@style/Widget.AppCompat.CompoundButton.RadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="40dp"
+                    android:layout_margin="10dp"
                     android:buttonTint="@color/colorLightGrey"
                     android:text="Button 3"
                     android:textColor="@android:color/holo_purple"
@@ -138,12 +137,11 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
+                    android:layout_margin="10dp"
                     android:buttonTint="@color/colorGrey"
                     android:text="Button 4"
                     android:textColor="@android:color/holo_purple"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+                    android:textSize="15sp" />
             </LinearLayout>
 
         </com.webmyne.controllerdemo.ui.MultiRowsRadioGroup>

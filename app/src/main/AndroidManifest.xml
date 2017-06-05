@@ -32,6 +32,7 @@
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".ui.ToggleButtonActivity" />
         <activity android:name=".ui.ProgressBarActivity" />
+        <activity android:name=".ui.SpinnerActivity"/>
         <activity android:name=".ui.SeekBarActivity" />
         <activity android:name=".ui.QuickContactActivity" />
         <activity android:name=".ui.AutoCompleteTextViewActivity" />

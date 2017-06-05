@@ -1,6 +1,7 @@
 package com.webmyne.controllerdemo.ui;
 
 import android.graphics.Color;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -28,6 +29,22 @@ public class ImageSwitcherActivity extends AppCompatActivity {
     private TextSwitcher mTextSwitcher;
 
 
+    private Handler mHandler = new Handler();
+    Runnable r=new Runnable() {
+        public void run() {
+            // TODO Auto-generated method stub
+            try
+            {
+                updateImageSwitcherImage();
+            }
+            finally
+            {
+                mHandler.postDelayed(this, 2000);
+            }
+        }
+    };
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +55,8 @@ public class ImageSwitcherActivity extends AppCompatActivity {
         clickListener();
 
         setAnimation();
+
+        mHandler.postDelayed(r,1000);
     }
 
 
@@ -79,6 +98,8 @@ public class ImageSwitcherActivity extends AppCompatActivity {
                 mTextSwitcher.setText(TEXTS[mPosition]);
                 simpleImageSwitcher.setBackgroundResource(IMAGES[mPosition]);
                 mPosition = (mPosition + 1) % TEXTS.length;
+
+
             }
         });
 
@@ -95,6 +116,14 @@ public class ImageSwitcherActivity extends AppCompatActivity {
         simpleImageSwitcher.setInAnimation(in);
         simpleImageSwitcher.setOutAnimation(out);
 
+    }
+
+
+    private void updateImageSwitcherImage()
+    {
+        mTextSwitcher.setText(TEXTS[mPosition]);
+        simpleImageSwitcher.setBackgroundResource(IMAGES[mPosition]);
+        mPosition = (mPosition + 1) % TEXTS.length;
     }
 
 }

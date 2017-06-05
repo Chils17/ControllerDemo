@@ -9,17 +9,23 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.MultiAutoCompleteTextView;
+import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
 import com.webmyne.controllerdemo.R;
+import com.webmyne.controllerdemo.adapter.AutoCompleteAdapter;
+import com.webmyne.controllerdemo.model.User;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class MultiAutoCompleteTextViewActivity extends AppCompatActivity {
-
     String[] androidVersionNames = {"Aestro", "Blender", "CupCake", "Donut", "Eclair", "Froyo",
             "Gingerbread", "HoneyComb", "IceCream Sandwich",
             "Jellibean", "Kitkat", "Lollipop", "MarshMallow"};
+    String[] countryNames = {"India", "China", "Australia", "Portugle", "America", "New Zealand"};
+    int flags[] = {R.drawable.india, R.drawable.china, R.drawable.australia, R.drawable.portugal, R.drawable.america, R.drawable.new_zealand};
     private MultiAutoCompleteTextView simpleMultiAutoCompleteTextView;
     private MultiAutoCompleteTextView auto;
     private EditText et1;
@@ -28,6 +34,8 @@ public class MultiAutoCompleteTextViewActivity extends AppCompatActivity {
     private MultiAutoCompleteTextView multiAutoCompleteTvMonth;
     private ArrayAdapter<String> monthAdapter;
     private String[] months;
+    private ArrayList<User> userArrayList;
+    private AutoCompleteAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +58,7 @@ public class MultiAutoCompleteTextViewActivity extends AppCompatActivity {
 
         setLayoutAdapter();
     }
+
 
     private void init() {
         simpleMultiAutoCompleteTextView = (MultiAutoCompleteTextView) findViewById(R.id.simpleMultiAutoCompleteTextView);
@@ -123,8 +132,22 @@ public class MultiAutoCompleteTextViewActivity extends AppCompatActivity {
             }
         });
 
+       /* userArrayList = new ArrayList<>();
+        userArrayList = populateCustomerData(userArrayList);
+
+        adapter = new AutoCompleteAdapter(this, userArrayList);
+        multiAutoCompleteTvMonth.setAdapter(adapter);*/
+
 
     }
+
+  /*  private ArrayList<User> populateCustomerData(ArrayList<User> userArrayList) {
+        userArrayList.add(new User(0, "India", R.drawable.india));
+        userArrayList.add(new User(1, "America", R.drawable.america));
+        userArrayList.add(new User(2, "Australia", R.drawable.australia));
+
+        return userArrayList;
+    }*/
 
 
 }

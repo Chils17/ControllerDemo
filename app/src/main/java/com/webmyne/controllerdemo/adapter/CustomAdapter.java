@@ -51,4 +51,5 @@ public class CustomAdapter extends BaseAdapter {
         names.setText(countryNames[i]);
         return view;
     }
+
 }

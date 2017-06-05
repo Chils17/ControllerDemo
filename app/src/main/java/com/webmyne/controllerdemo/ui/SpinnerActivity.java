@@ -37,14 +37,15 @@ public class SpinnerActivity extends AppCompatActivity {
     }
 
     private void initCustomSpinner() {
-        spinCustom = (Spinner) findViewById(R.id.spinCustom);
 
         ArrayList<String> languages = new ArrayList<String>();
+
         languages.add("India");
         languages.add("Canada");
         languages.add("America");
         languages.add("New ZeaLand");
         languages.add("China");
+
         CustomSpinnerAdapter customSpinnerAdapter = new CustomSpinnerAdapter(SpinnerActivity.this, languages);
         spinCustom.setAdapter(customSpinnerAdapter);
         spinCustom.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -68,7 +69,7 @@ public class SpinnerActivity extends AppCompatActivity {
         spin = (Spinner) findViewById(R.id.simpleSpinner);
         spinnerCountry = (Spinner) findViewById(R.id.spinnerCountry);
         spinnerCity = (Spinner) findViewById(R.id.spinnerCity);
-
+        spinCustom = (Spinner) findViewById(R.id.spinCustom);
     }
 
     private void clickListener() {
@@ -81,19 +82,19 @@ public class SpinnerActivity extends AppCompatActivity {
                 if (position == 0) {
                     ArrayAdapter<CharSequence> adapter = ArrayAdapter
                             .createFromResource(getApplicationContext(), R.array.city_india,
-                                    android.R.layout.simple_spinner_item);
+                                    R.layout.spinner_item);
                     spinnerCity.setAdapter(adapter);
 
                 } else if (position == 1) {
                     ArrayAdapter<CharSequence> adapter = ArrayAdapter
                             .createFromResource(getApplicationContext(), R.array.city_canada,
-                                    android.R.layout.simple_spinner_item);
+                                    R.layout.spinner_item);
                     spinnerCity.setAdapter(adapter);
 
                 } else if (position == 2) {
                     ArrayAdapter<CharSequence> adapter = ArrayAdapter
                             .createFromResource(getApplicationContext(), R.array.city_srilanka,
-                                    android.R.layout.simple_spinner_item);
+                                    R.layout.spinner_item);
                     spinnerCity.setAdapter(adapter);
                 }
             }

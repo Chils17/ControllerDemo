@@ -1,5 +1,6 @@
 package com.webmyne.controllerdemo.ui;
 
+import android.content.res.ColorStateList;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ public class RadioActivity extends AppCompatActivity {
 
     private RadioButton radioMan;
     private RadioButton radioFemale;
+    private RadioButton sound;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,9 @@ public class RadioActivity extends AppCompatActivity {
     private void init() {
         radioMan = (RadioButton) findViewById(R.id.radioMan);
         radioFemale = (RadioButton) findViewById(R.id.radioFemale);
+        sound = (RadioButton) findViewById(R.id.sound);
+
+
         radioMan.setButtonDrawable(R.drawable.ic_man);
         radioFemale.setButtonDrawable(R.drawable.ic_female);
 
